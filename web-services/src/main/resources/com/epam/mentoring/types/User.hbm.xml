@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.epam.mentoring.types">
+	<class name="User" table="Users">
+		<id name="id" column="User_ID" type="long">
+			<generator class="native" />
+		</id>
+		<property name="firstName" column="First_Name" type="string" />
+		<property name="lastName" column="Last_Name" type="string" />
+		<property name="login" column="Login" type="string" />
+		<property name="password" column="Password" type="string" />
+		<property name="isAdmin" column="Is_Admin" type="boolean" />
+	</class>
+</hibernate-mapping>
